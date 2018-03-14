@@ -1,0 +1,199 @@
+/*************************************************/
+/*******************HOMEPAGE**********************/
+/*************************************************/
+
+/*******************RESET CSS**********************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*******************HEADER**********************/
+
+/*******************FONT**********************/
+@import url(font-awesome.min.css);
+
+.red {background-color: red;}
+.yellow {background-color: yellow;}
+.blue {background-color: blue;}
+.green {background-color: green;}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+}
+
+.annonce-container {
+    background-color:#616161;
+    color: white;
+}
+
+.annonce {
+    height: 25px;
+    line-height: 25px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.icon_phone:after {
+    content: "";
+    display:inline-block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background:url(../IMG/icon_phone.svg);
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+.icon_phone {
+    padding-right: 25px;
+}
+
+.logo {
+    background-color: #f8f8f8;
+    /*background-color: red;*/
+    height: 150px;
+    padding: 1.2rem;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 85px;
+    color: #373536;
+}
+
+h4 {
+    font-size: 15px;
+    font-style: italic;
+    color: #373536;
+    font-weight:300;
+    letter-spacing: 1px;
+}
+
+.square {
+    background-color: #f52674;
+    width: 70px;
+    height: 75px;
+    color: white;
+    line-height: 70px;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.encart_devis, .encart_compte, .encart_conseils, .encart_panier {
+    height: 50px;
+}
+.encart_devis, .encart_conseils {
+    padding-left: 70px;
+    
+}
+
+.encart_devis:before, .encart_compte:after, .encart_conseils:before, .encart_panier:after {
+    content: "";
+    position: absolute;
+    height: 45px;
+    width: 70px;
+    background-repeat: no-repeat;
+    z-index: 5;
+    top: 0;
+}
+
+.encart_devis:before {
+    background:url(../IMG/icon_devis.jpg);
+    left: 0;
+}
+
+.encart_conseils:before {
+    background:url(../IMG/icon_conseils.jpg);
+    left: 0;
+}
+
+.encart_compte:after {
+    background:url(../IMG/icon_compte.jpg);
+    right: 0;
+}
+
+.encart_panier:after {
+    background:url(../IMG/icon_panier.jpg);
+    right: 0;
+}
+
+.first_line, .second_line {
+    border-bottom: 1px solid #ededed;
+}
+
+.intitule {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    padding-top: 0.75rem;
+}
+
+.legende {
+    font-size:12px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.menu {
+    height: 40px;
+}
+
+/*******************NAVIGATION**********************/
+
+.navbar {
+    font-size: 12px;
+    font-weight: 600;
+    border-top: 1px solid #dfdfdf;
+    box-shadow: 0px -5px 5px -4px rgba(156,156,156,1);
+}
+
+.navbar-brand:before {
+    content: "\F015";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-size: 30px;
+}
