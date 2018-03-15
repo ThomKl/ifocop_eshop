@@ -1,8 +1,10 @@
 /*************************************************/
-/*******************HOMEPAGE**********************/
+/****************** HOMEPAGE *********************/
 /*************************************************/
 
-/*******************RESET CSS**********************/
+/*************************************************/
+/***************** RESET CSS *********************/
+/*************************************************/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -48,9 +50,10 @@ table {
 	border-spacing: 0;
 }
 
-/*******************HEADER**********************/
+/*************************************************/
+/******************* HEADER **********************/
+/*************************************************/
 
-/*******************FONT**********************/
 .red {background-color: red;}
 .yellow {background-color: yellow;}
 .blue {background-color: blue;}
@@ -59,9 +62,6 @@ table {
 body {
     font-family: 'Montserrat', sans-serif;
     /*font-family: Futura,Trebuchet MS,Arial,sans-serif;*/
-}
-
-header {
 }
 
 .annonce-container {
@@ -181,7 +181,9 @@ h4 {
     height: 40px;
 }
 
-/*******************NAVIGATION**********************/
+/*************************************************/
+/***************** NAVIGATION ********************/
+/*************************************************/
 
 .navbar {
     font-size: 12px;
@@ -225,3 +227,124 @@ h4 {
     width: 190px !important;
     border-radius: none;
 }
+
+/*************************************************/
+/******************** MAIN ***********************/
+/*************************************************/
+
+main{
+	min-height: 1685px;
+    padding-top:40px;
+}
+
+/******************* CAROUSEL ********************/
+
+.carousel {
+    padding:0;
+}
+.carousel-control-next, .carousel-control-prev {
+    background:#f62775;
+    width:5%;
+    height: 40px;
+    top:45%;
+}
+
+.carousel-control-prev-icon {
+    background-image:url('../IMG/arrow_left.svg');
+}
+
+.carousel-control-next-icon {
+    background-image:url('../IMG/arrow_right.svg');
+}
+
+.carousel-caption {
+    left: 0;
+    right:0;
+    bottom:0;
+    padding: 10px 0 10px 25px;
+    background-color: rgba(0,0,0,0.4);
+    width:100%;
+    text-align: left;
+}
+
+h5 {
+    font-size:12px;  
+}
+
+.carousel-indicators {
+    bottom: 8px;
+    margin-right:0;
+    margin-left: 0;
+    left: unset;
+    right:30px;
+}
+
+.carousel-indicators li {
+    height: 15px;
+    width: 15px;
+    border:1px solid #cbc3c0;
+    box-sizing: border-box;
+}
+
+/*************************************************/
+/******************** ASIDE **********************/
+/*************************************************/
+
+.main_categorie, .main_categorie_carrelages {
+    height:170px;
+    padding:0;
+}
+
+.main_categorie_carrelages {
+    margin-bottom:20px;
+}
+
+.main_categorie img, .main_categorie_carrelages img {
+    height:100%;
+}
+
+.libelle_categorie {
+    background-color: #f62775;
+    bottom: 0;
+    position: absolute;
+    z-index: 15;
+    text-align: center;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: white;
+    width: 100%;
+}
+
+/*************************************************/
+/**************** REASSURANCE ********************/
+/*************************************************/
+
+.reassurance, .reassurance_l2 {
+    height:50px;
+    padding: 0;
+}
+
+.reassurance {
+    margin-top:30px;
+}
+
+.reassurance div, .reassurance_l2 div {
+    padding:0;
+}
+
+.rea_texte {
+    text-transform: uppercase;
+    color:#8a8a8a;
+    font-size: 12px;
+    position: absolute;
+    top: 40%;
+    line-height: 14px;
+}
+
+.rea_texte:nth-child(3), .rea_texte:last-child {
+    top: 35%;
+}
+
+/*******************FOOTER**********************/
